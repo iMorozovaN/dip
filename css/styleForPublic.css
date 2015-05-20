@@ -1,0 +1,223 @@
+* {margin:0;padding:0;}
+
+#page {
+	width:940px;
+	margin:0 auto;
+}
+
+.qestion-answer{
+
+     margin: 20px 10px;
+     padding-bottom:5px;
+     border-bottom: 1px solid gray;
+}
+
+.tree {
+
+    margin-top: 50px;
+
+    margin-bottom: 50px;
+}
+
+.tree .mainPage{
+
+      margin: 10px;
+}
+
+.tree .subPage{
+
+    list-style-type: none;
+
+    padding-left:30px;
+}
+
+.answeradmin{
+    
+    padding-top:5px;
+
+}
+
+.warning {
+
+    color : red;
+}
+
+.top_menu {
+
+	background: #C9CBC6;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.top_menu a{
+
+	margin-right: 10px;
+}
+
+.mainHeader{
+
+	height:100px;
+	background-color: #50693E;
+}
+
+.left-menu{
+
+	background-color: #CAD8C0;
+	width:200px;
+	padding-left: 20px;
+	display: inline-block;
+    vertical-align: top;
+}
+
+.page_content{
+
+
+	display: inline-block;
+	vertical-align: top;
+	width: 670px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+    margin-bottom: 100px;
+	
+}
+
+.main-footer{
+	position: fixed;
+	bottom: 0;
+	width: 960px;
+	background-color: #7B8077;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+ #container {
+
+    margin: auto;
+	width: 540px;
+	background: #FFFFFF;
+	text-align: left; 
+}
+ #mainContent {
+    
+    padding: 10px;
+	background: #C4D1E5;
+	position: relative;
+}
+ #footer {
+	padding: 0 10px;
+	background:#DDDDDD;
+}
+ #footer p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+
+form.form{
+    width: 600px;
+    margin: 0 auto;
+}
+
+form.form div {
+    padding:4px;
+    margin: 4px 0;
+    position:relative;
+}
+
+form.form input.text,
+.textarea {
+    padding:5px 10px;
+    height:20px;
+    border:1px solid #6688D3;
+    color:#333;
+    background:url(images/bginput.jpg) repeat-x bottom #fff;
+    position:relative;
+   
+    font-size: 12px;
+}
+
+form.form input.text {
+    width:290px;
+}
+
+form.form input.kaptch {
+    width:85px;
+    padding:5px 10px;
+    height:20px;
+    border:1px solid #6688D3;
+    color:#333;
+   
+    position:relative;
+    
+    font-size: 12px;
+ }
+
+form.form .textarea {
+    height:150px;
+    width:290px;
+}
+
+form.form label {
+    float:left;
+
+    width:120px;
+    text-align:right;
+    margin-right:15px;
+    font-size: 13px;
+}
+
+form.form .btn {
+
+    display:block;
+    height:31px;
+    padding:0 10px;
+    background-color: rgb(186, 189, 194);
+    font-weight:bold;
+    font-size:12px;
+    border:1px solid rgb(186, 189, 194);
+    outline:none;
+    cursor: pointer;
+
+}
+
+form.form .btn:hover{
+
+     border:1px solid #6688D3;
+}
+
+/* CSS3 
+form.form .btn,
+form.form .text,
+form.form .textarea { 
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+}*/
+
+
+div.error_field{
+   /* background: #FEDAFB;
+    border: 1px solid #FA74F0;*/
+}
+
+div.errors{
+    width: 450px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #FDFEC2;
+}
+
+div.errors .error{
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px;
+}
+
+
+
+
+

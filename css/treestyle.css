@@ -1,0 +1,44 @@
+#page {
+    width:940px;
+    margin:0 auto;
+}
+
+#header {
+
+    border-bottom: 2px solid #9CBED4;
+	padding-bottom:20px;
+	margin-top:20px;
+}
+
+#header p{
+
+	padding: 0px;
+	margin: 0px;
+}
+
+p.title{
+	
+	margin-top:20px;
+	margin-bottom:30px;
+	font-size:25px ;
+	color:#3C6194;
+}
+
+p.addnews{
+	margin:20px 0px;
+}
+
+p.addnews a{
+	padding:10px;
+	background-color:#B3CCDB;
+	text-decoration: none;
+}
+
+p.addnews a:hover{
+	text-decoration: underline;	 
+}
+
+.tree {
+
+	margin-bottom: 50px;
+}

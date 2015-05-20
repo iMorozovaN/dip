@@ -1,0 +1,29 @@
+
+/*array();
+array(1,2,3);
+array(1=>1, 2=>2);
+array('key' => 'test',);
+array(array(1), array(2));
+array('key' => array(1), array(2));
+
+$a = array();
+$a[0] = 1;
+$a[0][1] = 1;
+$a[0][1][0][1][0][1][0][1] = 1; */
+
+
+	//$a = array(
+	
+	//	1 => array(
+		
+	//		2 => '',
+	//		3 => array(
+	//			'123',
+	//		)
+		
+	//	),
+	
+	//);
+	//echo('<xmp>');
+	//print_r($a);
+	//echo('</xmp>');

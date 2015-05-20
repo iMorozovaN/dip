@@ -1,0 +1,22 @@
+p.title{
+	margin-top:30px;
+	font-size:18px;
+}
+
+p.newsblock{
+	/* text-indent: 20px;*/
+	margin-top:20px;
+}
+
+p.author{
+    margin:20px 0px ;
+}
+
+p.link{
+
+	font-size: 14px;
+	font-style:italic;
+	margin-bottom:100px;
+	margin-top:20px;
+	
+}

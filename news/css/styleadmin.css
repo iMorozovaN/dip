@@ -1,0 +1,128 @@
+
+* {margin:0;padding:0;}
+
+#page {
+	width:940px;
+	margin:0 auto;
+	position:relative;
+}
+
+#header{
+    border-bottom: 2px solid #9CBED4;
+	padding-bottom: 20px; 
+	margin-top:20px;
+}
+
+p.title{
+	margin-top:20px;
+	margin-bottom:30px;
+	font-size:25px ;
+	color:#3C6194;
+}
+
+p.addnews{
+	margin:20px 0px;
+}
+
+p.addnews a{
+	padding:10px;
+	background-color:#B3CCDB;
+	text-decoration: none;
+}
+
+p.addnews a:hover{
+	text-decoration: underline;	 
+}
+
+table{
+	width:100%;
+    border-collapse:collapse;
+	margin-bottom: 30;
+}
+ 
+td, tr{
+    padding:5px; 
+    border:1px solid grey; 
+	text-align: center;
+}
+
+tr.tabletitle{
+	background-color: #DDDBC1;
+}
+
+td.date{
+	width:15%;
+}
+
+td.text{
+	padding:10px;
+	width:55%;
+}
+
+p.alltext{
+	text-align: justify;
+}
+
+p.nav {
+
+	padding-top:20px;
+	font-size: 18px;
+	margin-bottom:50px;
+}
+
+p.nav a{
+
+	text-decoration: none;
+}
+
+p.nav a:hover{
+
+	text-decoration: underline;	 
+}
+
+.but {
+
+	padding:1px 20px;
+	margin-left:20px;
+	margin-bottom:10px;
+	background-color: #B3CCDB;
+}
+
+.select {
+
+	position:absolute;
+	right: 0; bottom: 0;
+}
+
+.ToList {
+	margin-left:185px;
+	border-bottom: 2px solid grey; 
+	border-right: 2px solid grey; 
+	height: 19px;
+}
+
+p.ToList a{
+
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color:#B3CCDB;
+	text-decoration: none;
+	color:#000;
+	font-size: 16px;
+}
+
+p.ToList a:hover{
+
+	text-decoration: none;
+	color:#000;
+		
+}
+
+p.ToList a:active{
+
+	border: 2px solid #89B0C8; 
+}
+
+select {
+	background-color: #DDDBC1;
+}

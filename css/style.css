@@ -1,0 +1,80 @@
+* {margin:0;padding:0;}
+
+#page {
+	width:940px;
+	margin:0 auto;
+}
+
+.questionBlock {
+
+    position: relative;
+	margin: 10px;
+	background-color: #D2E9F9;
+	padding: 10px 5px;
+}
+
+.opublikovano{
+
+	padding-top:5px;
+	font-style: italic;
+	color:rgb(12, 35, 107);
+}
+
+.linkAnswer{
+
+	position:absolute;
+	right: 10px; bottom: 10px;
+}
+
+.linkDel{
+
+    position:absolute;
+	right: 10px; top: 10px;
+}
+
+.warning {
+
+    color : red;
+}
+
+#header{
+
+    border-bottom: 2px solid #9CBED4;
+	padding-bottom: 20px;
+	margin-top:20px;
+}
+
+p.title{
+	
+	margin-top:20px;
+	margin-bottom:30px;
+	font-size:25px ;
+	color:#3C6194;
+}
+
+form {
+
+	background-color: #D2E9F9;
+	margin-bottom: 50px;
+}
+
+textarea {
+
+	width: 780px;
+	max-width: 780px;
+}
+
+.namePage input{
+
+	width: 350px;
+}
+
+.but{
+
+	margin-top:10px;
+	background: rgb(205, 207, 210);
+	padding:5px 10px;
+}
+
+
+

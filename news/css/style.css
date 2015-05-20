@@ -1,0 +1,83 @@
+* {margin:0;padding:0;}
+
+#page {
+	width:940px;
+	margin:0 auto;
+}
+
+div .image {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.fotorama {
+	width: 350px;
+	margin: 0 auto;
+}
+
+#largeImg {
+	margin: 0 auto;
+	height: 450px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+div .minImg {
+	display: inline-block;
+	width: 20%;
+	height:100px;
+	text-align: center;
+	border: solid 1px #ccc;
+	background-size: cover;
+}
+
+.minImg  img {
+	margin: 0 auto;
+	height: 100px;
+	padding: 5px;
+}
+
+
+
+h1 {
+	font-size:25px;
+	font-family:'Times';
+	color:#000;
+	margin:20px 0px ;
+}
+
+p.title{
+	margin-bottom:10px;
+}
+
+p.newsblock{
+	margin-bottom:20px;
+	text-align: justify;
+}
+
+p a.newsname{
+	font-size:20px;
+}
+
+p a:link {
+    color: #112288; 
+    text-decoration: none;
+   }
+
+p a:hover{
+ color: #BE4418; 
+ text-decoration: underline;	 
+}
+
+p.nav{
+	margin-top:40px;
+	font-size: 18px;
+}
+
+.date{
+	color: gray;
+	font-size:14px;
+	font-style:italic;
+	margin-left:10px;
+}
