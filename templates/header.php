@@ -8,6 +8,10 @@
     
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css" rel="stylesheet">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+
 	<?php if (isset($importStile)): ?><style type="text/css"> @import url("<?=$importStile?>");</style><?php endif; ?>
 
 	<!-- include libraries(jQuery, bootstrap, fontawesome) 

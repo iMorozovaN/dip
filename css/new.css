@@ -1,0 +1,14 @@
+.container {
+	width: 980px;
+}
+
+.b-header, .b-footer {
+	background-color: #eee;
+}
+
+.b-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
