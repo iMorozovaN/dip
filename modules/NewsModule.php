@@ -28,9 +28,14 @@ class NewsModule extends engine\Module {
 
         foreach ($nodes as $node) {
             $pages = $page->getArr((int)$node['ancestor'], 1);//многоуровневый массив нод
+            $pagestpl[] = $page->getArr((int)$node['ancestor'], 1);
+            
             $p[] = $page->viewListPages($pages, 'mainPage', 'subPage','index.php?module=public&cmd=index&page_id=', 0);
         }
-
+       /*echo ('<xmp>');
+        print_r($pagestpl);
+        echo ('</xmp>');
+        exit;*/
         //$styleFromFile = '/css/style.css';//treestyle.css выведет с отступами
 
         // если есть страница - вывести ее данные в форме
@@ -71,7 +76,8 @@ class NewsModule extends engine\Module {
             $styleFromFile = "/css/styleForPublicNewsList.css";
             $pathToTemp = Dir.'/templates/tpl_index.php';
        
-            include(BASEPATH.'/templates/publicIndexNews.php');
+            //include(BASEPATH.'/templates/publicIndexNews.php');
+            include(BASEPATH.'/templates/publicIndexNewsBootstrap.php');
         }
     }
 }

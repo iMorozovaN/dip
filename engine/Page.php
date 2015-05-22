@@ -157,33 +157,42 @@ class Page{
     }
 	
 	public function remove($id) {
-	
-		$query = "DELETE FROM `pages`
-					WHERE id IN (
-						SELECT descendant FROM (
-							SELECT descendant FROM pages p
-							JOIN pages_treepath t ON p.id = t.descendant
-							WHERE t.ancestor = '$id'
-						) AS tmptable);";
-		mysql_query($query);
-		if(mysql_errno()) {
 
-            throw new \ErrorException(mysql_error());
-		}
+		// проверка не статическая ли это страница:
+		$quer = "SELECT * FROM  `pages` WHERE id = '$id';";
+		$res = mysql_query($quer);	
+		while ($row = mysql_fetch_assoc($res))
+			$data = $row;	
 		
-		$query = "DELETE FROM `pages_treepath`
-					WHERE descendant IN (
-						SELECT descendant FROM (
-							SELECT descendant FROM pages_treepath
-							WHERE ancestor = '$id'
-						) AS tmptable);";
-        mysql_query($query);
-		if(mysql_errno()) {
+		if ($data['static']=='0') {
+	
+			$query = "DELETE FROM `pages`
+						WHERE id IN (
+							SELECT descendant FROM (
+								SELECT descendant FROM pages p
+								JOIN pages_treepath t ON p.id = t.descendant
+								WHERE t.ancestor = '$id'
+							) AS tmptable);";
+			mysql_query($query);
+			if(mysql_errno()) {
 
-            throw new \ErrorException(mysql_error());
-		}
-		return true;
-    }
+	            throw new \ErrorException(mysql_error());
+			}
+			
+			$query = "DELETE FROM `pages_treepath`
+						WHERE descendant IN (
+							SELECT descendant FROM (
+								SELECT descendant FROM pages_treepath
+								WHERE ancestor = '$id'
+							) AS tmptable);";
+	        mysql_query($query);
+			if(mysql_errno()) {
+
+	            throw new \ErrorException(mysql_error());
+			}
+			return true;
+        } else return false;
+	}
 	
 	public function readById($id) {
 	

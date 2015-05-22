@@ -5,12 +5,9 @@
     <link rel="stylesheet" type="text/css" href="<?=$styleFromFile?>" />
     <script src="/news/js/jquery-latest.min.js"></script>
     <script src="/news/js/main.js"></script>
-    
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css" rel="stylesheet">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
 
 	<?php if (isset($importStile)): ?><style type="text/css"> @import url("<?=$importStile?>");</style><?php endif; ?>
 
@@ -19,4 +16,4 @@
 	
 </head>
 <body>
-	<div id="page">
+	
