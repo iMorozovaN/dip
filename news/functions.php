@@ -140,7 +140,9 @@ function delete($id){
 }
 
 function announce($text){
-global $numchar;
+	
+	global $numchar;
+
 	$substr = substr($text,$numchar);
 	$pos = strpos($substr, " "); 
 	if(strlen($text)>$numchar) 

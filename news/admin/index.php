@@ -257,7 +257,7 @@
 		//----подключение шаблона при обновлении------------------------------------
 		case 'UpdateForm':
 			$styleFromFile="/news/css/styledel.css";
-			$adr = "/news/admin/index.php";
+			$adr = "/news/admin/index.php?page=$pg";
 			$tip = "Отмена изменения";
 			$link = "<< Перейти к управлению блоком \"Новости\"";
 			$titlePage = "Редактирование новости";

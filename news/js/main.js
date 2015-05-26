@@ -1,6 +1,16 @@
 $(document).ready(function() {
 
 
+/*
+   $('.nav li a').on('click', function(){
+
+        var parent = $(this).parents('li');
+
+     
+            $(parent).addClass('active');
+        
+    });*/
+
 	$("form").submit(function() {// обрабатываем отправку формы    
 		var noError = true; // индекс ошибки
 		
@@ -27,8 +37,6 @@ $(document).ready(function() {
 	$("form input[type=text],textarea,select").change(function() {
 		changed=true;
 	});
-
-
 
 			
 

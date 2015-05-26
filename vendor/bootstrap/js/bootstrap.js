@@ -755,6 +755,7 @@ if (typeof jQuery === 'undefined') {
 
   var backdrop = '.dropdown-backdrop'
   var toggle   = '[data-toggle="dropdown"]'
+  //var toggle   = '[data-toggle="modal"]'
   var Dropdown = function (element) {
     $(element).on('click.bs.dropdown', this.toggle)
   }

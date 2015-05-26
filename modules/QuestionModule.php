@@ -22,6 +22,7 @@ class QuestionModule extends engine\Module {
 
         foreach ($nodes as $node) {
             $pages = $page->getArr((int)$node['ancestor'], 1);//многоуровневый массив нод
+            $pagestpl[] = $page->getArr((int)$node['ancestor'], 1);
             $p[] = $page->viewListPages($pages, 'mainPage', 'subPage','index.php?module=public&cmd=index&page_id=', 0);
         }
 

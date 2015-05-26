@@ -21,7 +21,7 @@ class NewsModule extends engine\Module {
         $statics = $page->getStaticPages(); 
         //var_dump($statics);
 
-        //-----инфа для левого меню-----------------------------------
+        //-----инфа для левого меню--------------------------------
         $p = array();
         $nodes = $page->getFirstLevel();
         $news = array();
@@ -46,7 +46,7 @@ class NewsModule extends engine\Module {
             $page_id = '24';
             $news = $page->readById($page_id);
         }
-        //------------------------------------------------------------
+        //--------------------------------------------------------
 
         if($id){
         $news = readById($id); //кортеж по id
@@ -58,7 +58,8 @@ class NewsModule extends engine\Module {
             $arrNames = json_decode($row['arrImg']);
             $date = date("j.m.Y", strtotime($row['date']));
             $pathToTemp = Dir.'/templates/tpl_news.php';
-            include(BASEPATH.'/templates/publicIndexNews.php');
+            //include(BASEPATH.'/templates/publicIndexNews.php');
+            include(BASEPATH.'/templates/publicIndexNewsBootstrap.php');
         }
         }
         else{

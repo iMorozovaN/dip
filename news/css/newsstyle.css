@@ -10,13 +10,31 @@ p.newsblock{
 
 p.author{
     margin:20px 0px ;
+  text-align: right;
+  font-size: 12px;
+  padding-right: 10px;
 }
 
 p.link{
 
 	font-size: 14px;
 	font-style:italic;
-	margin-bottom:100px;
 	margin-top:20px;
 	
+}
+
+p span.date {
+
+	  padding-left: 20px;
+  font-size: 14px;
+}
+
+.fotodiv{
+
+  padding-bottom: 20px;
+}
+
+div .fotodiv .fotorama__wrap{
+
+	  margin: 0 auto;
 }

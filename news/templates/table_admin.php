@@ -4,6 +4,6 @@
 		<p class=alltext><?=$text?></p>
 	</td>			
 	<td><p><?=$row['author']?></p></td>
-	<td><p><a href="/news/admin/index.php?id_news=<?=$row['id_news']?>&cmd=<?="delete"?>&page=<?=$pg?>" title='Удалить новость'>Удалить</a></td>
+	<td><p><a href="/news/admin/index.php?id_news=<?=$row['id_news']?>&cmd=<?="delete"?>&page=<?=$pg?>" title='Удалить новость ' onClick="if(confirm('Вы уверены, что хотите удалить? ')) return true; else return false;">Удалить</a></td>
 	<td><p><a href="/news/admin/index.php?id_news=<?=$row['id_news']?>&cmd=<?="update"?>&page=<?=$pg?>" title='Редактировать текст новости'>Редактировать</a></td>
 </tr>

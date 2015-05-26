@@ -1,9 +1,234 @@
 * {margin:0;padding:0;}
 
-#page {
-	width:940px;
-	margin:0 auto;
+body{
+
+    position: relative; 
 }
+
+.container {
+    width: 980px !important; 
+    padding:0px !important;
+}
+
+ body .b-header, body .b-footer {
+
+    background-color: #2883A3;
+    padding:0; 
+}
+
+/*div .b-karusel{
+  padding-top: 50px; 
+}*/
+
+div .row{
+
+    margin-left:0;
+    margin-right:0;
+}
+
+.b-school-title{
+
+    padding: 0px 65px!important; 
+}
+
+div .b-top-menu-2 ul li{
+
+    height: 50px;
+}
+
+div .b-top-menu-2 ul li a {
+
+      padding: 15px 15px;
+      border-radius: 0px; 
+}
+
+.b-footer {
+    position: absolute!important; 
+    bottom: 0!important; 
+    left: 0!important; 
+    right: 0!important; 
+}
+
+.b-top-menu-0{
+
+    padding:0px !important; 
+}
+
+.b-top-menu-1{
+
+    padding:0 !important; 
+}
+
+.b-top-menu-2{
+
+    padding:0 !important; 
+}
+
+.row .navbar-fixed-top {
+
+    border-width: 0 ; 
+}
+
+div .b-top-menu-0 .b-navbar-topmenu{
+
+    border:0px;
+
+    border-radius: 0; 
+    width: 980px; 
+    margin: 0 auto; 
+}
+
+div .row .b-left-menu{
+
+    background-color: #728021!important; 
+    padding-right: 0px!important; 
+    padding-left: 0 !important; 
+}
+
+.container .row .b-content {
+
+    margin-bottom: 50px;
+    padding-left:30px;
+}
+
+div .b-content .page_content  h1 {
+    
+    font-size:25px;
+    color:#000;
+    margin:20px 0px ;
+}
+
+div .b-top-menu-1 .sosh{
+
+    background-color: #728021;
+}
+
+.b-top-menu-1 .sosh a{
+
+    color: #F7F3F3;
+}
+
+div .b-top-menu-0 .b-top-menu-1 a{
+
+    color: #F7F3F3;
+}
+
+.b-top-menu-2 ul li {
+
+      background-color: #2883A3;
+}
+
+div .b-left-menu ul li a{
+
+    color: #F7F3F3; 
+}
+
+.b-top-menu-2 ul.nav-pills>li.active>a {
+
+    background-color: #80B0DA !important; 
+    color: #FFF;
+}
+
+.b-top-menu-2 ul.nav-pills>li.active>a:hover, .sosh a:hover{
+
+    color: #FFF!important; 
+}
+
+.b-top-menu-2 ul.nav-pills>li>a:hover {
+
+    color: #1D5586 !important; 
+}
+
+/* Отображаем выпадающее меню при наведении */
+ul.nav li.dropdown:hover > ul.dropdown-menu {     
+    display: block; 
+}
+/* Примыкаем его вплотную к полоске меню*/
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {     
+    margin-top: 0; 
+}
+/* Убираем верхний уголок в выпадающем меню Bootstrap-а */ 
+.navbar .nav > li > .dropdown-menu:after, .navbar .nav > li > .dropdown-menu:before { 
+    content:none;
+}
+/* Обеспечиваем нормальную работу выпадающего меню на гаджетах */ 
+ul.nav li.dropdown:hover > ul.dropdown-menu>li>a { 
+    position: relative; 
+    z-index: 1000; 
+}
+
+
+div .b-left-menu .nav-pills>li>a {
+
+  border-radius: 0px; 
+}
+
+div .b-left-menu .nav-pills>li>a:hover {
+
+      background-color: rgb(190, 203, 111);
+
+    color: #111;
+}
+
+div .b-left-menu .nav-pills>li .podmenu {
+
+  border-radius: 0px; 
+  border: 0px;
+
+    border-left: 1px solid #728021;
+}
+
+div .b-left-menu .nav-pills>li .podmenu  {
+
+    padding:0px;
+}
+
+div .b-left-menu .nav-pills>li .podmenu li a{
+
+    color: #111;
+    padding: 10px 20px;
+}
+
+div .b-left-menu .nav-pills>li .podmenu li a:hover{
+
+    background-color: rgb(190, 203, 111); /*rgb(158, 176, 55);*/
+}
+
+@media (max-width: 768px) {
+
+    div .b-top-menu-0 .b-navbar-topmenu{
+
+        border-radius: 0; 
+        border:0px;
+        width:700px; 
+        margin: 0 auto; 
+    }
+
+    div .b-karusel{
+        display: none;
+        /*visibility: collapse;*/
+        padding-top: 0px; 
+    }
+
+    .b-header-min, .niz{
+
+        background-color: #2883A3;
+    }
+
+    .b-top-menu-2 .nav-pills>li+li {
+
+        margin-left: 0px; 
+    }
+
+    div .b-top-menu-1 .sosh {
+
+        padding:0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+} 
+
 
 .qestion-answer{
 
@@ -75,11 +300,6 @@
 	display: inline-block;
 	vertical-align: top;
 	width: 670px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-    margin-bottom: 100px;
-	
 }
 
 .main-footer{
