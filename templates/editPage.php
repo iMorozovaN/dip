@@ -1,4 +1,5 @@
 <?php include(BASEPATH.'/news/templates/header.php');?>
+
 <form name="addform" action="<?=$action?>" method="post" enctype="multipart/form-data">
     <table cellpadding="0" cellspacing="6">
         <tr><br>

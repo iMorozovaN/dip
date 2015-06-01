@@ -1,4 +1,4 @@
-<?php include(Dir.'/templates/header.php');?>
+<?php include(Dir.'/templates/headerWithMenu.php');?>
 <div id="content">
 	<p class=addnews><a href="/news/admin/index.php?cmd=<?="add"?>" title="Добавить новую новость на сайт" ><?="Добавить новость"?></a></p>
 	<table>
@@ -23,7 +23,7 @@
 			</select>
 			<input class=but type="submit" value="Выбрать">
 		</form>
-		<p class=ToList><a href="/news/admin/index.php" title="отменить выборку" >Отмена</a>  
+		<br><p class=ToList><a href="/news/admin/index.php" title="отменить выборку" >Отмена</a>  
 	</div>
 <p class=nav><?=$nav?></p>		
 

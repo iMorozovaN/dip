@@ -1,5 +1,7 @@
 	<div class="col-md-3 col-xs-3 b-left-menu">
+	
 		<ul class="nav nav-pills nav-stacked">
+					<p class="magicLi">Сведения об образовательной организации:</p>
 
 					<?php  foreach ($pagestpl as $node): 
 
@@ -22,4 +24,5 @@
 				    endforeach;?>
 
 		</ul>
+		
 	</div>

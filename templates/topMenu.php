@@ -8,21 +8,34 @@
 				  <div class="container-fluid b-top-menu-1">
 				    <div class="col-md-3 navbar-header sosh">
 				      <a class="navbar-brand" href="http://1boot.ru/">
-				        СОШ №3 Смоленск
+				        МБОУ "СШ №3"
 				      </a>
 				    </div>
 				    <div class="col-md-9 b-top-menu-2">
 				  
 				      <ul class="nav nav-pills nav-justified  ">
-				        <?php if ($_GET["module"]=="news" || empty($_GET)):?><li role="presentation" class="active"><a href="/index.php?module=news&cmd=index">Новости</a></li><?php else:?>
+						<!-- выводим главную страницу первой (лучше придумывать некогда)-->
+				      	<?php foreach ($statics as $item):?>
+						<?php if ($item["id"] == '51'): ?>
+							<?php if ($_GET["page_id"]==$item["id"] || empty($_GET)):?>
+							<li role="presentation"  class="active"><a href="/index.php?module=public&cmd=index&page_id=<?=$item["id"];?>"><?=$item["title"];?></a></li><?php else:?>
+							<li role="presentation"><a href="/index.php?module=public&cmd=index&page_id=<?=$item["id"];?>"><?=$item["title"];?></a></li>
+							<?php endif;?>
+						<?php endif;?>
+						<?php endforeach;?>
+						<!-- выводим модули (новости и вопросы)-->
+				        <?php if ($_GET["module"]=="news") :?><li role="presentation" class="active"><a href="/index.php?module=news&cmd=index">Новости</a></li><?php else:?>
 						<li role="presentation"><a href="/index.php?module=news&cmd=index">Новости</a></li><?php endif;?>
 						<?php if ($_GET["module"]=="question"):?><li role="presentation" class="active"><a href="/index.php?module=question&cmd=index">Обратная связь</a></li><?php else:?>
 						<li role="presentation"><a href="/index.php?module=question&cmd=index">Обратная связь</a></li><?php endif;?>
-						
+						<!-- выводим все статические страницы, кроме главной-->
 						<?php foreach ($statics as $item):?>
+						<?php if ($item["id"]!= '51' && $item["id"]!= '45'): ?>
 							<?php if ($_GET["page_id"]==$item["id"]):?>
 							<li role="presentation"  class="active"><a href="/index.php?module=public&cmd=index&page_id=<?=$item["id"];?>"><?=$item["title"];?></a></li><?php else:?>
-							<li role="presentation"><a href="/index.php?module=public&cmd=index&page_id=<?=$item["id"];?>"><?=$item["title"];?></a></li><?php endif;?>
+							<li role="presentation"><a href="/index.php?module=public&cmd=index&page_id=<?=$item["id"];?>"><?=$item["title"];?></a></li>
+							<?php endif;?>
+						<?php endif;?>
 						<?php endforeach;?>
 
 				      </ul>
@@ -43,19 +56,19 @@
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      <img src="/slider/wallpapers-violet-flowers-621043.jpeg" alt="...">
+			      <img src="/slider/child.jpg" alt="...">
 			      <div class="carousel-caption">
 			       
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img src="/slider/wallpapers-violet-flowers-621043.jpeg" alt="...">
+			      <img src="/slider/girls.jpg" alt="...">
 			      <div class="carousel-caption">
 			       
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img src="/slider/wallpapers-violet-flowers-621043.jpeg" alt="...">
+			      <img src="/slider/vipusk.jpg" alt="...">
 			      <div class="carousel-caption">
 			 
 			      </div>

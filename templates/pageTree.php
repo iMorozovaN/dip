@@ -1,10 +1,11 @@
-<?php include(BASEPATH.'/news/templates/header.php');?>
+<?php include(BASEPATH.'/news/templates/headerWithMenu.php');?>
 
 
 	
 	<p class="addnews">
 		<a href="index.php?module=pages&cmd=edit">Добавить стр</a>
 	</p>
+	<!-- динамические страницы: -->
 	<div class="tree">
 		<?php foreach ($p as $node): ?>
 		<div>
@@ -14,7 +15,7 @@
 	</div>
 
 	<p class="title"><b><?=$title2;?></b></p>
-
+	<!-- статические страницы: -->
 	<div>
 		<?php foreach ( $staticPages as $itPage): ?>
 		

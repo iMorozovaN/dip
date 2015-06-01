@@ -1,6 +1,28 @@
 $(document).ready(function() {
 
-
+$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() > 400) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},400);
+ 
+});
+ 
+});
 /*
    $('.nav li a').on('click', function(){
 

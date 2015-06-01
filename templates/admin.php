@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
        	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link href="/favicon.jpg" rel="shortcut icon"  type="image/jpg" />
     </head>
     <body>
         <div id='page'>

@@ -3,14 +3,14 @@
 $config['basepath'] = dirname(__DIR__);//имя родительского каталога: Z:\home\frame.ru\www
 
 $config['default_module'] = 'admin';
-$config['public_default_module'] = 'news';
+$config['public_default_module'] = 'public';//news
 $config['default_cmd'] = 'index';
 
 $config['auth_module'] = 'auth';
 $config['auth_cmd'] = 'index';
 
 $config['user'] = 'admin';
-$config['pass'] = 'qwerty';
+$config['pass'] = 'd8578edf8458ce06fbc5bb76a58c5ca4'; // алг хэширования md5
 
 $config['dbhost'] = 'localhost'; // адрес сервера для подключения к СУБД
 $config['dbname'] = 'news_site'; // Имя БД для подключения

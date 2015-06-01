@@ -30,10 +30,10 @@ class PublicModule extends engine\Module {
         if ($page_id = $app->getStrParam('page_id')) {
 
             $content = $page->readById($page_id);
-        } //else {
-         //   $page_id = '24';
-         //   $content = $page->readById($page_id);
-        //}
+        } else {
+            $page_id = '51';
+            $content = $page->readById($page_id);
+        }
 
         include(BASEPATH.'/templates/publicIndex.php');
         

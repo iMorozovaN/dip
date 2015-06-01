@@ -28,6 +28,8 @@ class QuestionModule extends engine\Module {
 
         $styleFromFile = '/css/styleForPublic.css';//treestyle.css выведет с отступами
 
+        $e = $question->getEmail();
+        
         // если есть страница - вывести ее данные в форме
         if ($page_id = $app->getStrParam('page_id')) {
 
@@ -44,6 +46,11 @@ class QuestionModule extends engine\Module {
 
         $question = new Quest();
         $warning = '';
+        $e = '';
+
+        if ($_POST) $question->addEmail($_POST['email']);
+
+        $e =  $question->getEmail();
 
         if ($_GET["quest_id"]){
 

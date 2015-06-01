@@ -80,8 +80,12 @@ $message = '';
 if($validator->run()){
 	
 	//Здесь впишите свой e-mail адрес
-	//на негу будут приходить уведомления с формы
-	$to = 'nasya.panika@yandex.ru';
+	//на него будут приходить уведомления с формы
+
+	if (!$e) $to = 'tes.pa3nika@yandex.ru'; 
+		else
+	$to = $e;
+//var_dump($to);exit;
  
 	//$from = "=?UTF-8?b?" . base64_encode($validator->postdata('user_name')) . "?=";
     //$subject = "=?UTF-8?b?" . base64_encode( $validator->postdata('subject') ) . "?=";

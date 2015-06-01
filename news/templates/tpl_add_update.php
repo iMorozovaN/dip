@@ -1,4 +1,4 @@
-<?php include(Dir.'/templates/header.php');?>
+<?php include(Dir.'/templates/headerNewsEdit.php');?>
 	<form name="addform" action="<?=$action?>" method="post" enctype="multipart/form-data">
 		<table cellpadding="0" cellspacing="6">
 			<tr>
@@ -11,7 +11,7 @@
 			</tr>
 			<tr>
 				<td ><p>Автор</p></td>
-				<td><input type="text" name="author" size="81" value='<?=$author; ?>'></td>
+				<td class="tdauthor"><input type="text" name="author" size="81" value='<?=$author; ?>'></td>
 			</tr>
 			<tr>
 				<td ><p>Дата</p></td>

@@ -24,7 +24,7 @@ class AuthManager {
         global $config;
     
         if($user != $config['user']) return false;
-        if($pass != $config['pass']) return false;
+        if(md5($pass) != $config['pass']) return false;
     
         $_SESSION[$this->sessionKey] =  1;
     

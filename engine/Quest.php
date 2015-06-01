@@ -16,6 +16,42 @@ class Quest{
 		return $res;
 	}
 
+	public function addEmail($email){
+
+
+
+		$query = "UPDATE `mail` SET mail='$email' WHERE id='1';";
+
+        mysql_query($query);
+        if(mysql_errno()) {
+
+            throw new \ErrorException(mysql_error());
+        }
+        $res = mysql_affected_rows();// Возвращает количество рядов, затронутых последним INSERT, UPDATE,  DELETE запросом
+        if ($res == -1)  {
+            throw new \ErrorException('Error при обращении к БД');
+        }
+
+        return $res;
+
+	}
+
+	public function getEmail(){
+
+		
+		$query = "SELECT `mail` FROM `mail` WHERE id='1';";
+		$res = mysql_query($query);
+		
+		$data = array();
+		if (!mysql_num_rows($res)) return $data='';
+		
+		while ($row = mysql_fetch_assoc($res))
+			$data = $row;	
+
+		$data = $data['mail'];
+		return $data;
+	}
+
 	public function getQuestById($id){
 
 		$id = (int)$id;

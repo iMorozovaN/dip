@@ -23,6 +23,7 @@
                 padding 5px;
             }
         </style>
+        <link href="/favicon.jpg" rel="shortcut icon"  type="image/jpg" />
     </head>
     <body>
         <div>
